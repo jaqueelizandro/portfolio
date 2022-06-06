@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+body {
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    position: relative;
+}
+
+nav ul {
+    background-color: rgb(251, 246, 239);
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 80px;
+    padding: 0 5% 0 0;
+    align-items: center;
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+    padding: 15px;
+}
+
+a {
+    color: rgb(142, 154, 175);
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.wrapper {
+    max-width: 960px;
+    margin: auto;
+    padding: 9rem 1rem 9rem 1rem;
+}
+
+.nav {
+    height: 80px;
+}
+
+.home {
+    background-color: rgb(220, 224, 217);
+
+    /* background-color: rgb(240, 240, 240); */
+}
+
+.home .wrapper {
+    display: grid;
+    place-self: center;
+}
+
+.home img {
+    border-radius: 100%;
+    padding: 1rem;
+    height: 25rem;
+    grid-area: 2 / 1 / span 2 / span 1;
+    align-self: center;
+    /* place-self: flex-start; */
+    /* padding-top: 30%; */
+}
+
+.home h1 {
+    line-height: 3.5rem;
+    grid-area: 2 / 2 / span 2 / span 1;
+    color: rgb(78, 96, 129);
+    align-self: center;
+    padding: 3% 1.5%;
+}
+
+h1>span {
+    width: 100%;
+    display: inline-block;
+}
+
+.about {
+    background-color: rgb(251, 254, 251);
+}
+
+.about .wrapper {
+    display: grid;
+    font-size: 1.2rem;
+    text-align: justify;
+    line-height: 2rem;
+}
+
+h1 {
+    color: rgb(78, 96, 129);
+}
+
+.skills {
+    background-color: rgb(234, 215, 195);
+}
+
+.skills .wrapper {
+    display: grid;
+}
+
+.icons-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.icons-container div {
+    display: grid;
+    place-self: center;
+    padding: 1.5rem;
+    height: 12rem;
+}
+
+.icons-container span {
+    text-align: center;
+}
+
+.icons-container i {
+    font-size: 6rem;
+    color: rgb(30, 0, 119);
+}
+
+.skills p,
+.work p,
+.contact p {
+    font-size: 1.2rem;
+}
+
+.work .wrapper {
+    display: grid;
+}
+
+.container-work,
+.container-work2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+    padding: 3em 1em 3em 1em;
+}
+
+.container-work p,
+.container-work2 p {
+    font-size: 14px;
+}
+
+.container-work img {
+    grid-area: 1 / 1 / span 5 / span 1;
+    height: 28rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgb(220, 224, 217);
+    place-self: center;
+}
+
+.container-work2 img {
+    grid-area: 1 / 2 / span 5 / span 1;
+    height: 28rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgb(220, 224, 217);
+    place-self: center;
+}
+
+.container-work .link,
+.container-work2 .link {
+    align-self: end;
+}
+
+.container-tech {
+    display: flex;
+    justify-self: flex-end;
+}
+
+.container-tech i {
+    padding-left: 1rem;
+    font-size: 1.5rem;
+}
+
+.contact {
+    background-color: rgb(204, 210, 187);
+}
+
+.contact .wrapper {
+    display: grid;
+}
+
+.container-contact {
+    display: grid;
+}
+
+.container-contact img {
+    height: 2rem;
+    padding: 1em;
+}
+
+.container-contact a {
+    border: 1px solid rgb(220, 224, 217);
+    display: flex;
+    align-items: center;
+    box-shadow: 2px 2px 5px rgb(173, 176, 172);
+    padding: 1em;
+    margin-bottom: 10px;
+}
+
+.container-contact p {
+    margin: 0;
+}
+
+footer {
+    background-color: rgb(135, 139, 124);
+    display: flex;
+    justify-content: center;
+}
+
+footer img {
+    height: 1rem;
+}
+
+footer p {
+    color:rgb(244, 190, 116);
+}
