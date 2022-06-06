@@ -127,27 +127,48 @@ h1 {
     display: grid;
 }
 
-.container-work img,
-.container-work2 img {
-    width: 28rem;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px rgb(220, 224, 217);
-    place-self: center;
+.container-work,
+.container-work2 {
+    padding-top: 2rem;
 }
 
-.container-work .link,
-.container-work2 .link {
-    align-self: end;
+.container-work img,
+.container-work2 img {
+    display: flex;
+    margin: auto;
+    max-width: 90%;
+    max-height: 30rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgb(220, 224, 217);
+}
+
+.container-work h3,
+.container-work2 h3 {
+    color: rgb(78, 96, 129);
+    font-size: 2rem;
+    border-bottom: 1px solid rgb(78, 96, 129);
+}
+
+.container-link {
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+    padding: 2rem 0;
+}
+
+.container-link a {
+    font-size: 1.5rem;
 }
 
 .container-tech {
     display: flex;
     justify-self: flex-end;
+    padding: 2rem 0;
 }
 
 .container-tech i {
     padding-left: 1rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .contact {
@@ -194,7 +215,7 @@ footer p {
     color:rgb(244, 190, 116);
 }
 
-@media (min-width: 540px) {
+@media (min-width: 700px) {
     nav ul {
         justify-content: flex-end;
     }
@@ -219,10 +240,10 @@ footer p {
     }
 
     .container-work img {
-        grid-area: 1 / 1 / span 5 / span 1;
+        grid-area: 1 / 1 / span 4 / span 1;
     }
 
     .container-work2 img {
-        grid-area: 1 / 2 / span 5 / span 1;
+        grid-area: 1 / 2 / span 4 / span 1;
     }
 }
