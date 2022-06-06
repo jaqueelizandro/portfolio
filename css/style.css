@@ -17,21 +17,20 @@ header {
 nav ul {
     background-color: rgb(251, 246, 239);
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     height: 80px;
-    padding: 0 5% 0 0;
     align-items: center;
     margin: 0;
+    padding: 0 10px;
 }
 
 li {
     list-style-type: none;
-    padding: 15px;
 }
 
 a {
@@ -41,9 +40,9 @@ a {
 }
 
 .wrapper {
-    max-width: 960px;
+    max-width: 1280px;
     margin: auto;
-    padding: 9rem 1rem 9rem 1rem;
+    padding: 9rem 1rem;
 }
 
 .nav {
@@ -52,8 +51,6 @@ a {
 
 .home {
     background-color: rgb(220, 224, 217);
-
-    /* background-color: rgb(240, 240, 240); */
 }
 
 .home .wrapper {
@@ -63,20 +60,11 @@ a {
 
 .home img {
     border-radius: 100%;
-    padding: 1rem;
+    padding: 3rem 1rem;
     height: 25rem;
     grid-area: 2 / 1 / span 2 / span 1;
     align-self: center;
-    /* place-self: flex-start; */
-    /* padding-top: 30%; */
-}
-
-.home h1 {
-    line-height: 3.5rem;
-    grid-area: 2 / 2 / span 2 / span 1;
-    color: rgb(78, 96, 129);
-    align-self: center;
-    padding: 3% 1.5%;
+    margin: auto;
 }
 
 h1>span {
@@ -139,30 +127,9 @@ h1 {
     display: grid;
 }
 
-.container-work,
-.container-work2 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 20px;
-    padding: 3em 1em 3em 1em;
-}
-
-.container-work p,
-.container-work2 p {
-    font-size: 14px;
-}
-
-.container-work img {
-    grid-area: 1 / 1 / span 5 / span 1;
-    height: 28rem;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px rgb(220, 224, 217);
-    place-self: center;
-}
-
+.container-work img,
 .container-work2 img {
-    grid-area: 1 / 2 / span 5 / span 1;
-    height: 28rem;
+    width: 28rem;
     border-radius: 10px;
     box-shadow: 2px 2px 5px rgb(220, 224, 217);
     place-self: center;
@@ -225,4 +192,37 @@ footer img {
 
 footer p {
     color:rgb(244, 190, 116);
+}
+
+@media (min-width: 540px) {
+    nav ul {
+        justify-content: flex-end;
+    }
+
+    li {
+        padding: 0 2rem;
+    }
+
+    .home h1 {
+        line-height: 3.5rem;
+        grid-area: 2 / 2 / span 2 / span 1;
+        color: rgb(78, 96, 129);
+        align-self: center;
+        padding: 3% 1.5%;
+    }
+    .container-work,
+    .container-work2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+        padding: 3em 1em;
+    }
+
+    .container-work img {
+        grid-area: 1 / 1 / span 5 / span 1;
+    }
+
+    .container-work2 img {
+        grid-area: 1 / 2 / span 5 / span 1;
+    }
 }
