@@ -135,7 +135,7 @@ h1 {
 .container-work img,
 .container-work2 img {
     display: flex;
-    margin: auto;
+    margin: 1rem auto;
     max-width: 90%;
     max-height: 30rem;
     border-radius: 10px;
