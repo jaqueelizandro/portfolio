@@ -202,7 +202,7 @@ h1 {
 }
 
 footer {
-    background-color: rgb(135, 139, 124);
+    background-color: rgb(87,89,79);
     display: flex;
     justify-content: center;
 }
@@ -212,7 +212,8 @@ footer img {
 }
 
 footer p {
-    color:rgb(244, 190, 116);
+    font-family: sans-serif;
+    color:rgb(255, 255, 255);
 }
 
 @media (min-width: 700px) {
