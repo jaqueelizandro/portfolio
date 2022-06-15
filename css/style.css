@@ -27,6 +27,7 @@ nav ul {
     align-items: center;
     margin: 0;
     padding: 0 10px;
+    z-index: 10;
 }
 
 li {
@@ -92,7 +93,10 @@ h1>span {
 
 .about .wrapper img {
     height: 25rem;
-    /* grid-area: 1 / 1 / span 1 / span 1; */
+}
+
+.about .wrapper .title {
+    font-weight: bold;
 }
 
 .about .wrapper p {
@@ -289,7 +293,6 @@ footer p {
 @media (min-width: 800px) {
     nav ul {
         justify-content: flex-end;
-        z-index: 10;
     }
 
     li {
@@ -315,10 +318,6 @@ footer p {
 
     .about .wrapper img {
         place-self: center;
-    }
-
-    .about .wrapper .title {
-        font-weight: bold;
     }
 
     .container-work,
