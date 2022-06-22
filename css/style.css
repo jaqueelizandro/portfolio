@@ -16,7 +16,7 @@ header {
 }
 
 nav ul {
-    background-color: rgb(251, 246, 239);
+    background-color: rgb(251, 246, 239, 0.97);
     display: flex;
     justify-content: space-between;
     position: fixed;
@@ -44,7 +44,7 @@ a {
 .wrapper {
     max-width: 1280px;
     margin: auto;
-    padding: 9rem 1rem;
+    /* padding: 9rem 1rem; */
 }
 
 .nav {
@@ -54,6 +54,7 @@ a {
 .home {
     background-color: rgb(220, 224, 217);
     font-size: 20px;
+    padding: 8.5rem 0;
 }
 
 .home h1 {
@@ -74,6 +75,7 @@ h1>span {
 
 .about {
     background-color: rgb(251, 254, 251);
+    padding: 5rem 0 4rem 0;
 }
 
 .about .wrapper {
@@ -102,6 +104,7 @@ h1 {
 .skills {
     position: relative;
     background-image: linear-gradient(rgb(251, 254, 251), rgb(234, 215, 195));
+    padding: 5rem 0 8rem 0;
 }
 
 svg {
@@ -113,7 +116,6 @@ svg {
 
 .skills .wrapper {
     display: grid;
-    /* max-width: 900px; */
 }
 
 .icons-container {
@@ -147,6 +149,7 @@ svg {
 
 .work {
     background-color: rgb(255, 255, 255);
+    padding: 5rem 0 4rem 0;
 }
 
 .work .wrapper {
@@ -200,13 +203,14 @@ svg {
 .contact {
     /* background-color: rgb(204, 210, 187); */
     /* background-color: rgb(234, 215, 195); */
-    background-color: rgb(251, 254, 251);
-
+    /* background-color: rgb(251, 254, 251); */
+    /* background-color: rgb(220, 224, 217); */
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(251, 254, 251));
+    padding: 5rem 0 9rem 0;
 }
 
 .contact .wrapper {
     display: grid;
-    /* max-width: 900px; */
 }
 
 .container-contact {
