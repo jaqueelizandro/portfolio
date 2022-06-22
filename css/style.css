@@ -113,6 +113,7 @@ svg {
 
 .skills .wrapper {
     display: grid;
+    max-width: 900px;
 }
 
 .icons-container {
@@ -205,6 +206,7 @@ svg {
 
 .contact .wrapper {
     display: grid;
+    max-width: 900px;
 }
 
 .container-contact {
