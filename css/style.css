@@ -205,36 +205,41 @@ svg {
     /* background-color: rgb(234, 215, 195); */
     /* background-color: rgb(251, 254, 251); */
     /* background-color: rgb(220, 224, 217); */
+    /* background-color: rgb(158, 161, 155); */
     position: relative;
-    background-image: linear-gradient(rgb(255, 255, 255), rgb(220, 224, 217));
+    background-image: linear-gradient(rgb(254, 255, 254), rgb(158, 161, 155));
     /* background-image: linear-gradient(rgb(255, 255, 255), rgb(251, 254, 251)); */
-    padding: 5rem 1rem 9rem 1rem;
+    padding: 5rem 1rem 4rem 1rem;
 }
 
 .contact .wrapper {
     display: grid;
-}
-
-.container-contact {
-    display: grid;
+    grid-template-rows: max-content;
 }
 
 .container-contact img {
     height: 2rem;
-    padding: 1em;
+    padding-right: 1em;
 }
 
 .container-contact a {
-    border: 1px solid rgb(220, 224, 217);
+    /* border: 1px solid rgb(220, 224, 217); */
     display: flex;
     align-items: center;
-    box-shadow: 2px 2px 5px rgb(173, 176, 172);
-    padding: 1em;
-    margin-bottom: 10px;
+    /* box-shadow: 2px 2px 5px rgb(173, 176, 172); */
+    /* padding: 1em; */
+    /* margin-bottom: 10px; */
+    line-height: 5rem;
+    border-bottom: 1px solid rgb(87,89,79);
 }
 
 .container-contact p {
     margin: 0;
+}
+
+.goodreads {
+    grid-area: 1 / 2 / span 2 / span 1;
+    place-self: center;
 }
 
 footer {
