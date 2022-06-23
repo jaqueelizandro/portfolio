@@ -231,6 +231,7 @@ svg {
     /* margin-bottom: 10px; */
     line-height: 5rem;
     border-bottom: 1px solid rgb(87,89,79);
+    /* max-width: 500px; */
 }
 
 .container-contact p {
@@ -238,7 +239,6 @@ svg {
 }
 
 .goodreads {
-    grid-area: 1 / 2 / span 2 / span 1;
     place-self: center;
 }
 
@@ -311,6 +311,13 @@ footer p {
     100% { opacity: 0; }
 }
 
+@media (min-width: 950px) {
+    .goodreads {
+        grid-area: 1 / 2 / span 2 / span 1;
+        place-self: center;
+    }
+}
+
 @media (min-width: 800px) {
     nav ul {
         justify-content: flex-end;
@@ -360,4 +367,5 @@ footer p {
     .container-work2 img {
         grid-area: 1 / 2 / span 4 / span 1;
     }
+
 }
