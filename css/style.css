@@ -261,15 +261,40 @@ h1 {
     /* background-color: rgb(251, 254, 251); */
     /* background-color: rgb(220, 224, 217); */
     /* background-color: rgb(158, 161, 155); */
-    position: relative;
-    background-image: linear-gradient(rgb(254, 255, 254), rgb(158, 161, 155));
+    background-color: rgb(87,89,79);
+    /* background-color: rgb(78, 96, 129); */
+    /* position: relative; */
+    /* background-image: linear-gradient(rgb(254, 255, 254), rgb(158, 161, 155)); */
     /* background-image: linear-gradient(rgb(255, 255, 255), rgb(251, 254, 251)); */
-    padding: 5rem 1rem 4rem 1rem;
+    padding: 5rem 1rem 9rem 1rem;
 }
 
-.contact .wrapper {
+.contact h1,
+.contact h3 {
+    color: rgb(255, 255, 255);
+}
+
+.container-contact {
     display: grid;
     grid-template-rows: max-content;
+    row-gap: 2em;
+    padding-top: 2em;
+    max-width: 800px;
+}
+
+.container-contact .email {
+    display: flex;
+    align-self: center;
+}
+
+.container-contact .resume {
+    display: flex;
+    align-self: center;
+}
+
+.container-contact .linkedin {
+    display: flex;
+    align-self: center;
 }
 
 .container-contact img {
@@ -278,19 +303,12 @@ h1 {
 }
 
 .container-contact a {
-    /* border: 1px solid rgb(220, 224, 217); */
-    display: flex;
-    align-items: center;
-    /* box-shadow: 2px 2px 5px rgb(173, 176, 172); */
-    /* padding: 1em; */
-    /* margin-bottom: 10px; */
-    line-height: 5rem;
-    border-bottom: 1px solid rgb(87,89,79);
-    /* max-width: 500px; */
-}
-
-.container-contact p {
-    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    align-self: center;
 }
 
 .bookshelf {
@@ -312,6 +330,7 @@ footer img {
 footer p {
     font-family: sans-serif;
     color:rgb(255, 255, 255);
+    font-size: 12px;
 }
 
 .rw-words-1 span{
@@ -463,5 +482,17 @@ footer p {
 
     .container-work2 img {
         grid-area: 1 / 2 / span 4 / span 1;
+    }
+
+    .container-contact .email {
+        grid-column: 1 / span 1;
+    }
+    
+    .container-contact .resume {
+        grid-column: 2 / span 1;
+    }
+    
+    .container-contact .linkedin {
+        grid-column: 3 / span 1;
     }
 }
