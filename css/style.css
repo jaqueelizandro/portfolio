@@ -245,7 +245,8 @@ h1 {
     padding: 0 10px;
 }
 
-.container-link a:hover {
+.container-link a:hover,
+.container-link a:focus {
     background-color: rgb(78, 96, 129);
     border-radius: 10px;
     color: white;
