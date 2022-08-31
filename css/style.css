@@ -129,7 +129,7 @@ nav a:hover {
     height: 20rem;
 }
 
-h1>span {
+h1 > span {
     width: 100%;
     display: inline-block;
 }
@@ -141,17 +141,15 @@ h1>span {
 
 .about .wrapper {
     display: grid;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-align: justify;
     line-height: 2rem;
 }
 
 .about .wrapper img {
     height: 25rem;
-}
-
-.about .wrapper .title {
-    font-weight: bold;
+    float: left;
+    padding: 1.5em 1.5em 1.5em 0;
 }
 
 .about .wrapper p {
@@ -272,16 +270,7 @@ h1 {
 }
 
 .contact {
-    /* background-color: rgb(204, 210, 187); */
-    /* background-color: rgb(234, 215, 195); */
-    /* background-color: rgb(251, 254, 251); */
-    /* background-color: rgb(220, 224, 217); */
-    /* background-color: rgb(158, 161, 155); */
     background-color: rgb(87,89,79);
-    /* background-color: rgb(78, 96, 129); */
-    /* position: relative; */
-    /* background-image: linear-gradient(rgb(254, 255, 254), rgb(158, 161, 155)); */
-    /* background-image: linear-gradient(rgb(255, 255, 255), rgb(251, 254, 251)); */
     padding: 5rem 1rem 9rem 1rem;
 }
 
@@ -472,16 +461,16 @@ footer p {
         font-size: 60px;
     }
 
-    .about .wrapper .text {
+    /* .about .wrapper .text {
         display: grid;
         gap: 20px;
         justify-items: stretch;
         margin: 0;
-    }
+    } */
 
-    .about .wrapper img {
-        place-self: center;
-    }
+    /* .about .wrapper img {
+        padding: 1.5em 1.5em 1.5em 0;
+    } */
 
     .container-work,
     .container-work2 {
